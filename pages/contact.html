@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+
+    <!-- Styles Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Boxicos library import -->
+    <link rel="stylesheet" href="../styles/style.css"><!-- styles css -->
+    <link rel="stylesheet" href="../styles/contact.css"><!-- contact style css-->
+
+    <title>Adriano Bispo</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="../index.html#sobre-mim">Sobre Mim...</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="#">Contatos</a>
+    <!-- Header Section-->
+    <header class="header">
+        <a href="#introducion" class="logo">Adriano <span>Bispo</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="../index.html#introducion">Introdução</a>
+            <a href="../index.html#journey">Minha Jornada</a>
+            <a href="../index.html#techs">Tecnologias</a>
+            <a href="../pages/projects.html">Projetos</a>
+            <a href="#contact" class="active">Contato</a>
         </nav>
     </header>
 
-<main>
-    <section>
-        <h2>Entre em contato comigo através das minhas Redes Sociais</h2>
-    
-        <table>
-            <tr>
-                <th>Cabeçalho 1</th>
-                <td>Conteúdo 1</td>
-            </tr>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Contact <span>Me</span>
+        </h2>
 
-            <tr>
-                <th>Cabeçalho 1</th>
-                <td>Conteúdo 1</td>
-            </tr>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="E-mail" />
+                </div>
 
-            <tr></tr>
-                <th>Cabeçalho 1</th>
-                <td>Conteúdo 1</td>
-            </tr>
-        </table>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" />
+                    <input type="text" placeholder="Subject" />
+                </div>
+
+            </div>
+
+            <div class="input-group2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn"/>
+            </div>
+        </form>
     </section>
-</main>
 
-<footer> <p>Desenvolvido por Adriano Bispo</p> </footer>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/adriano-bispo/">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/AdrianoBispo">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/adrianov_bispo/">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+        </div>
+
+        <p class="copyright">© Desenvolvido por Adriano Bispo 2024</p>
+    </footer>
 </body>
+
 </html>
