@@ -391,3 +391,66 @@ span {
     font-weight: 300;
     line-height: 22px;
 }
+
+/* Techs Section */
+
+.techs-box {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.techs .heading {
+    margin-bottom: 5rem;
+}
+
+.techs-box img {
+    width: 15rem;
+    height: 13rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.tech-item {
+    min-height: 450px;
+    max-width: 450px;
+    background: rgba(0, 0 , 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: var(--text-color); 
+    transition: 0.3s ease-in-out;
+}
+
+.tech-item:hover {
+   border: 3px solid var(--main-color);
+   transform: translateY(-10px)scale(1.03);
+   box-shadow: 0 0 50px var(--main-color);
+}
+
+.tech-item h2 {
+    font-size: 2.8rem;
+}
+
+.tech-item p {
+    font-size: 1.3rem;
+}
+
+#star {
+    color: #ffda0a;
+    font-size: 2rem;
+}
