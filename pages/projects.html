@@ -1,23 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
+
+    <!-- Styles Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Boxicos library import -->
+    <link rel="stylesheet" href="../styles/style.css"><!-- style css -->
+
+    <title>Projetos</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="../index.html#sobre-mim">Sobre Mim...</a>
-            <a href="#">Projetos</a>
-            <a href="contatos.html">Contatos</a>
+    <!-- Header Section-->
+    <header class="header">
+        <a href="#projects" class="logo">Adriano <span>Bispo</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="../index.html#introducion">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="./contact.html" class="active">Contato</a>
         </nav>
     </header>
-    
-    <main>
 
-    </main>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="heading">Projetos</h2>
 
-    <footer> <p>Desenvolvido por Adriano Bispo</p> </footer>
+            <div class="wrapper">
+                <div class="project-item">
+                    <img src="../img/projetos/calculadora.png" alt="">
+                    <h2>Calculadora</h2>
+                    <p>
+                        Calculadora simples feita utilizando HTML, CSS e JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <img src="../img/projetos/jogo-numero-secreto.png" alt="">
+                    <h2>Jogo do Numero Secreto</h2>
+                    <p>
+                        Jogo de adivinhação onde o usuário deve adivinhar o número secreto que será determinado aleatoriamente pela máquina. O jogo foi desenvolvido com HTML, CSS e JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <img src="../img/projetos/landing-page-alura.png" alt="">
+                    <h2>Landing Page Alura Plus</h2>
+                    <p>
+                        Projeto desenvolvido através do curso "Praticando HTML e CSS" da Alura Cursos. O projeto consiste em uma landing page de propaganda da Alura Plus. Foi desenvolvido apenas com HTML e CSS.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <img src="../img/projetos/meteora.png" alt="">
+                    <h2>Meteora</h2>
+                    <p>
+                        O projeto Meteora é um e-commerce fictício de roupas e acessórios online. Esse projeto foi feito com o Bootstrap 5 através do curso "Bootstrap 5: crie uma loja virtual" da Alura.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <img src="../img/projetos/pong-game.png" alt="">
+                    <h2>Pong Game</h2>
+                    <p>
+                        Jogo simples inspirado no antigo jogo onde o objetivo principal é derrotar seu oponente sendo o primeiro a ganhar 10 pontos. Projeto simples feito com HTML e JavaScript através da biblioteca p5.js.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <img src="../img/projetos/toca-som.png" alt="">
+                    <h2>Tocasom</h2>
+                    <p>
+                        Joguinho simples feito com HTML, CSS e Javascript onde é emitido o som do instrumento musical bateria.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/adriano-bispo/">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/AdrianoBispo">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/adrianov_bispo/">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+        </div>
+
+        <p class="copyright">© Desenvolvido por Adriano Bispo 2024</p>
+    </footer>
 </body>
+
 </html>
