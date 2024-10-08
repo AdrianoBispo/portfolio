@@ -1,9 +1,5 @@
 /* Contact Section */
 
-.contact {
-    background-color: var(--bg-color);
-}
-
 .contact h2 {
     margin-bottom: 3rem;
     color: var(--text-color);
@@ -11,30 +7,36 @@
 
 .contact form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
+    flex-direction: column;
+    align-items:center;
 }
 
-.contact form .input-box {
+.input-group {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    margin: 3rem;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
+form input {
     padding: 2rem;
-    background: var(--second-bg-colorbg-color);
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+form textarea {
+    width: 50%;
+    padding: 2rem;
+    background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 2rem;
     color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 1.5rem 0;
     resize: none;
 }
 

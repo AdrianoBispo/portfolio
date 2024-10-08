@@ -10,21 +10,19 @@
     <link rel="stylesheet" href="../styles/style.css"><!-- styles css -->
     <link rel="stylesheet" href="../styles/contact.css"><!-- contact style css-->
 
-    <title>Adriano Bispo</title>
+    <title>Entre em Contato</title>
 </head>
 
 <body>
     <!-- Header Section-->
     <header class="header">
-        <a href="#introducion" class="logo">Adriano <span>Bispo</span></a>
+        <a href="#contact" class="logo">Adriano <span>Bispo</span></a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <!-- Navbar -->
         <nav class="navbar">
-            <a href="../index.html#introducion">Introdução</a>
-            <a href="../index.html#journey">Minha Jornada</a>
-            <a href="../index.html#techs">Tecnologias</a>
+            <a href="../index.html#introducion">Home</a>
             <a href="../pages/projects.html">Projetos</a>
             <a href="#contact" class="active">Contato</a>
         </nav>
@@ -33,27 +31,29 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="heading">
-            Contact <span>Me</span>
+            Envie uma <span>Mensagem</span>
         </h2>
 
-        <form action="">
+        <!-- Area do formulário para envio dos dados -->
+        <form action="https://api.staticforms.xyz/submit" method="post"> <!-- Integra a API do Static Forms -->
+            <input type="hidden" name="accessKey" value="d94326f2-ef68-43cf-b26c-e41136a21a84">
+            <!-- Chave de acesso da API -->
+
             <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" />
-                    <input type="email" placeholder="E-mail" />
-                </div>
+                <!-- Campo de Nome -->
+                <input class="form__input" type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" />
 
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number" />
-                    <input type="text" placeholder="Subject" />
-                </div>
+                <!-- Campo de E-mail -->
+                <input class="form__input" type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off" />
 
             </div>
 
-            <div class="input-group2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn"/>
-            </div>
+            <!-- Campo de Mensagem -->
+            <textarea id="form__textarea" name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+
+            <!-- Botão de envio do formulário-->
+            <button id="form__submit" type="submit" class="btn">Enviar</button>
+
         </form>
     </section>
 
