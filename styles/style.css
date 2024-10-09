@@ -267,7 +267,7 @@ span {
 /* Journey Section */
 
 .heading {
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: center;
     margin: 5rem 0;
 }
@@ -318,21 +318,21 @@ span {
 }
 
 .timeline-dot {
-    height: 21px;
-    width: 21px;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: var(--main-color);
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
     position: absolute;
-    left: calc(50% - 8px);
+    left: calc(50% - 10px);
     border-radius: 50%;
     top: 10px;
 }
 
 .timeline-date {
     font-size: 20px;
-    font-weight: 800;    
-    color: var(--text-color);
+    font-weight: 500;
+    font-style: italic;   
     margin: 6px 0 15px;
 }
 
@@ -352,58 +352,39 @@ span {
 }
 
 .timeline-content h3 {
-    font-size: 20px;
-    color: var(--text-color);
+    font-size: 1.2rem;
     margin: 0 0 10px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .timeline-content p {
-    color: var(--text-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 22px;
 }
 
 /* Techs Section */
 
-.techs-box {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .techs .heading {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .techs-box img {
-    width: 15rem;
-    height: 13rem;
+    width: 10vw;
+    height: 10vh;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+.techs-container {
+    display: flex;
 }
 
 .tech-item {
-    min-height: 450px;
-    max-width: 450px;
     border: 3px solid var(--main-color);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 2rem 3rem;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    gap: 1.5rem;
     color: var(--text-color); 
     transition: 0.3s ease-in-out;
 }
@@ -419,7 +400,7 @@ span {
 }
 
 .tech-item p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 #golden-star {

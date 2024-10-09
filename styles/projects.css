@@ -1,20 +1,8 @@
 /* Projects Section */
 
-.projects-box {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.projects .heading {
-    margin-bottom: 5rem;
-}
-
 .projects-box img {
-    width: 15rem;
-    height: 13rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 .wrapper {
@@ -48,9 +36,9 @@
 }
 
 .project-item h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 .project-item p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
