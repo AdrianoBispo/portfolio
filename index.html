@@ -24,7 +24,7 @@
             <a href="#journey">Minha Jornada</a>
             <a href="#techs">Tecnologias</a>
             <a href="#projects">Projetos</a>
-            <a href="./pages/contact.html" class="active">Contato</a>
+            <a href="#contact" class="active">Contato</a>
         </nav>
     </header>
 
@@ -223,6 +223,35 @@
 
             </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Envie uma <span>Mensagem</span>
+        </h2>
+
+        <!-- Area do formulário para envio dos dados -->
+        <form action="https://api.staticforms.xyz/submit" method="post"> <!-- Integra a API do Static Forms -->
+            <input type="hidden" name="accessKey" value="d94326f2-ef68-43cf-b26c-e41136a21a84">
+            <!-- Chave de acesso da API -->
+
+            <div class="input-group">
+                <!-- Campo de Nome -->
+                <input class="form__input" type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" />
+
+                <!-- Campo de E-mail -->
+                <input class="form__input" type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off" />
+
+            </div>
+
+            <!-- Campo de Mensagem -->
+            <textarea id="form__textarea" name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+
+            <!-- Botão de envio do formulário-->
+            <button id="form__submit" type="submit" class="btn">Enviar</button>
+
+        </form>
     </section>
 
     <!-- Footer Section -->
